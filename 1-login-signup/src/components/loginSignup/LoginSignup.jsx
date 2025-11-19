@@ -4,7 +4,7 @@ import './style.css';
 
 
 const LoginSignup = () => {
-    
+
     const [action, setAction] = useState('Signup');
     
     return(
@@ -14,7 +14,7 @@ const LoginSignup = () => {
                 <div className="login-underline"></div>
             </div>
             <div className="from-inputs">
-                <form action="#" method="#">
+                <form action="#" method="#" onSubmit={(event)=>{event.preventDefault();}}>
                     <div className={action == 'Login' || action == 'Forget' ? 'name-none' : 'form-control mb-6'}>
                         <label htmlFor="Name">Name</label>
                         <input type="text" placeholder="Name" />
